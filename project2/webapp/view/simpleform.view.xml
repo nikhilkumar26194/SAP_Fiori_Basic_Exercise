@@ -1,0 +1,18 @@
+<mvc:View controllerName="form.project2.controller.simpleform"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page 
+      	<content>
+			<ComboBox
+				items="{
+					path: '/CountriesCollection',
+					sorter: { path: 'text' }
+				}"
+                value=" "
+                >
+				<core:Item key="{key}" text="{text}" />
+			</ComboBox>
+		</content>
+    
+    ></Page>
+</mvc:View>
