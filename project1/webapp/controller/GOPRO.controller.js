@@ -7,8 +7,17 @@ function (Controller ,JSONModel) {
 
     return Controller.extend("gopro1.project1.controller.GOPRO", {
         onInit: function () {
-            var oModel = JSONModel( );
-            this.getView().setModel(oModel);
+              var oData= [{
+                productName :"asus",
+                productCategory:"laptop", 
+
+              },
+              {
+                productName :"hp",
+                productCategory:"laptop", 
+
+              }]
+           this.getView().setModel(new JSONModel(oData),"products");
               
         }
     });

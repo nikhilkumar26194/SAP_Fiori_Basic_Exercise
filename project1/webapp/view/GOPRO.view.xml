@@ -2,11 +2,15 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m">
-   <List
-    headerText ="Product"
-    headerLevel ="H2"
-    >
-           
-   </List>
-    
+   	<List
+		headerText="Products"
+		headerLevel="H2"
+		items="{
+			path: 'products>/'
+		}" >
+		<StandardListItem
+			title="{products>productName}"
+			description="{products>productCategory}"/>
+	</List>       
+   
 </mvc:View>
