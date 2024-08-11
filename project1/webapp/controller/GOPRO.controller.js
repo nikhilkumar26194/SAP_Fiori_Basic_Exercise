@@ -16,6 +16,14 @@ function (Controller ,JSONModel) {
                 productName :"hp",
                 productCategory:"laptop", 
 
+              },{
+                productName :"dell",
+                productCategory:"ipad", 
+
+              },{
+                productName :"apple",
+                productCategory:"macbook", 
+
               }]
            this.getView().setModel(new JSONModel(oData),"products");
               
